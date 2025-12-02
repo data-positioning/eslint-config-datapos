@@ -1,6 +1,7 @@
 {
-    "name": "eslint-config-datapos",
-    "version": "1.0.1",
+    "name": "@datapos/eslint-config-datapos",
+    "version": "1.0.2",
+    "private": false,
     "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -16,11 +17,14 @@
     },
     "devDependencies": {
         "@datapos/datapos-development": "^0.3.250",
+        "jiti": "^2.6.1",
+        "prettier": "^3.7.3",
         "typescript": "^5.9.3"
     },
     "scripts": {
         "build": "tsc",
         "lint": "eslint . --ext .ts",
+        "release": "npm run sync && npm publish --access public",
         "sync": "node -e \"import('@datapos/datapos-development').then(m => m.syncProjectWithGitHub())\""
     }
 }
