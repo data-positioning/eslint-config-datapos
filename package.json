@@ -1,30 +1,42 @@
 {
     "name": "@datapos/eslint-config-datapos",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "private": false,
     "type": "module",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "peerDependencies": {
         "@types/eslint-plugin-security": "^3.0.0",
-        "@typescript-eslint/eslint-plugin": "^8.48.0",
-        "@typescript-eslint/parser": "^8.48.0",
+        "@typescript-eslint/eslint-plugin": "^8.48.1",
+        "@typescript-eslint/parser": "^8.48.1",
         "eslint": "^9.39.1",
         "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-prettier": "^5.5.4",
         "eslint-plugin-security": "^3.0.1",
         "eslint-plugin-sonarjs": "^3.0.5",
         "eslint-plugin-unicorn": "^62.0.0"
     },
     "devDependencies": {
-        "@datapos/datapos-development": "^0.3.250",
+        "@datapos/datapos-development": "^0.3.253",
         "jiti": "^2.6.1",
+        "license-report": "^6.8.1",
+        "license-report-check": "^0.1.2",
+        "license-report-recursive": "^6.8.2",
+        "npm-check-updates": "^19.1.2",
+        "owasp-dependency-check": "^1.0.0",
         "prettier": "^3.7.3",
         "typescript": "^5.9.3"
     },
     "scripts": {
+        "audit": "node -e \"import('@datapos/datapos-development').then(m => m.auditDependencies())\"",
         "build": "tsc",
+        "check": "node -e \"import('@datapos/datapos-development').then(m => m.checkDependencies())\"",
+        "document": "node -e \"import('@datapos/datapos-development').then(m => m.documentDependencies(['Apache-2.0', 'MIT', 'LGPL-3.0-only'], false))\"",
+        "format": "node -e \"import('@datapos/datapos-development').then(m => m.formatCode())\"",
         "lint": "eslint . --ext .ts",
         "release": "npm run sync && npm publish --access public",
-        "sync": "node -e \"import('@datapos/datapos-development').then(m => m.syncProjectWithGitHub())\""
+        "sync": "node -e \"import('@datapos/datapos-development').then(m => m.syncProjectWithGitHub())\"",
+        "test": "node -e \"import('@datapos/datapos-development').then(m => m.testProject())\"",
+        "update": "node -e \"import('@datapos/datapos-development').then(m => m.updateDataPosDependencies(['development']))\""
     }
 }
