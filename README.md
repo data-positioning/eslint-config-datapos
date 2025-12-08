@@ -10,13 +10,14 @@
 
 The OWASP Dependency Check Report identifies known vulnerabilities in project dependencies. It is generated automatically on each release using the npm package `owasp-dependency-check`. We also rely on GitHub Dependabot to continuously check for vulnerabilities across all dependencies.
 
-[View the OWASP Dependency Check Report](https://data-positioning.github.io/eslint-config-datapos/dependency-check-reports/dependency-check-report.html)
+[View the OWASP Dependency Check Report](https://data-positioning.github.io/eslint-config-datapos/dependency-check-report.html)
 
 ### Dependency Licenses
 
 The following table lists top-level production and peer dependencies. All these dependencies (including transitive ones) have been recursively verified to use Apache-2.0, LGPL-3.0-only, or MIT—commercially friendly licenses with minimal restrictions. Developers cloning this repository should independently verify dev and optional dependencies; users of the uploaded library are covered by these checks. We do not include unlicensed dependencies. Used to support development activity and not released as part of the production release. Check if you clone.
 
 <!-- DEPENDENCY_LICENSES_START -->
+
 | Name                             |     Type      | Installed | Latest | Latest Modified          |
 | :------------------------------- | :-----------: | :-------: | :----: | :----------------------- |
 | @types/eslint-plugin-security    |      MIT      |   3.0.0   | 3.0.0  | 2025-08-03T06:41:19.458Z |
@@ -28,6 +29,7 @@ The following table lists top-level production and peer dependencies. All these 
 | eslint-plugin-security           |  Apache-2.0   |   3.0.1   | 3.0.1  | 2024-06-14T11:35:50.036Z |
 | eslint-plugin-sonarjs            | LGPL-3.0-only |   3.0.5   | 3.0.5  | 2025-08-25T10:31:41.718Z |
 | eslint-plugin-unicorn            |      MIT      |  62.0.0   | 62.0.0 | 2025-10-26T06:56:45.679Z |
+
 <!-- DEPENDENCY_LICENSES_END -->
 
 **Installed dependencies are kept up-to-date with latest releases.**
