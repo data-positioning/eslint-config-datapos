@@ -32,5 +32,12 @@ declare const _default: ({
     };
     rules: any;
     ignores?: undefined;
+} | {
+    files: string[];
+    ignores?: undefined;
+    languageOptions?: undefined;
+    plugins?: undefined;
+    settings?: undefined;
+    rules?: undefined;
 })[];
 export default _default;
