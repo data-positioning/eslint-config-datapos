@@ -1,6 +1,7 @@
 {
     "name": "@datapos/eslint-config-datapos",
-    "version": "1.0.12",
+    "description": "Common ESLint configuration used in Data Positioning projects.",
+    "version": "1.0.13",
     "private": false,
     "type": "module",
     "main": "dist/index.js",
@@ -17,11 +18,13 @@
         "eslint-plugin-unicorn": "^62.0.0"
     },
     "devDependencies": {
-        "@datapos/datapos-development": "^0.3.297",
+        "@datapos/datapos-development": "^0.3.298",
         "jiti": "^2.6.1",
+        "license-downloader": "^1.3.3",
         "license-report": "^6.8.1",
         "license-report-check": "^0.1.2",
         "license-report-recursive": "^6.8.2",
+        "nanoid": "^5.1.6",
         "npm-check-updates": "^19.1.2",
         "owasp-dependency-check": "^1.0.0",
         "prettier": "^3.7.4",
