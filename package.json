@@ -1,6 +1,6 @@
 {
     "name": "@datapos/eslint-config-datapos",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "private": false,
     "type": "module",
     "main": "dist/index.js",
@@ -34,7 +34,7 @@
         "document": "node -e \"import('@datapos/datapos-development').then(m => m.documentDependencies(['Apache-2.0', 'MIT', 'LGPL-3.0-only'], false))\"",
         "format": "node -e \"import('@datapos/datapos-development').then(m => m.formatCode())\"",
         "lint": "eslint . --ext .ts",
-        "release": "npm run sync && npm publish --access public",
+        "release": "npm run build && npm run sync && npm publish --access public",
         "sync": "node -e \"import('@datapos/datapos-development').then(m => m.syncProjectWithGitHub())\"",
         "test": "node -e \"import('@datapos/datapos-development').then(m => m.testProject())\"",
         "update": "node -e \"import('@datapos/datapos-development').then(m => m.updateDataPosDependencies(['development']))\""
