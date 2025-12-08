@@ -1,6 +1,6 @@
 {
     "name": "@datapos/eslint-config-datapos",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "private": false,
     "type": "module",
     "main": "dist/index.js",
@@ -17,14 +17,14 @@
         "eslint-plugin-unicorn": "^62.0.0"
     },
     "devDependencies": {
-        "@datapos/datapos-development": "^0.3.253",
+        "@datapos/datapos-development": "^0.3.297",
         "jiti": "^2.6.1",
         "license-report": "^6.8.1",
         "license-report-check": "^0.1.2",
         "license-report-recursive": "^6.8.2",
         "npm-check-updates": "^19.1.2",
         "owasp-dependency-check": "^1.0.0",
-        "prettier": "^3.7.3",
+        "prettier": "^3.7.4",
         "typescript": "^5.9.3"
     },
     "scripts": {
