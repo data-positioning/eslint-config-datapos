@@ -14,7 +14,7 @@ import security from 'eslint-plugin-security';
 export default [
     { ignores: ['dependency-check-bin/**', 'dependency-check-reports/**', 'dist/**', 'stats/**'] },
     {
-        files: ['eslint.config.ts', 'vite.config.ts', 'src/**/*.ts'],
+        files: ['vite.config.ts', 'src/**/*.ts'],
         languageOptions: { parser: tseslintParser, parserOptions: { project: './tsconfig.json' } },
         plugins: {
             '@typescript-eslint': tseslint,
