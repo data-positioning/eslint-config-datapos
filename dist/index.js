@@ -47,6 +47,8 @@ export default [
             '@typescript-eslint/strict-boolean-expressions': 'warn',
             'import/no-duplicates': 'warn',
             'sort-imports': ['warn', { allowSeparatedGroups: true, ignoreCase: true, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'] }],
+            'sonarjs/todo-tag': 'warn',
+            'unicorn/prefer-switch': 'warn',
             'unicorn/switch-case-braces': ['warn', 'avoid'],
             'unicorn/filename-case': 'off',
             'unicorn/no-null': 'off'
