@@ -54,9 +54,11 @@ export default [
             'import/no-duplicates': 'warn',
             'sort-imports': ['warn', { allowSeparatedGroups: true, ignoreCase: true, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'] }],
 
+            'sonarjs/no-dead-store': 'warn',
+            'sonarjs/no-unused-vars': 'warn',
             'sonarjs/todo-tag': 'warn',
-            'unicorn/prefer-switch': 'warn',
 
+            'unicorn/prefer-switch': 'warn',
             'unicorn/switch-case-braces': ['warn', 'avoid'],
             'unicorn/filename-case': 'off',
             'unicorn/no-null': 'off'
