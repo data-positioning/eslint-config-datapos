@@ -54,6 +54,7 @@ export default [
             'import/no-duplicates': 'warn',
             'sort-imports': ['warn', { allowSeparatedGroups: true, ignoreCase: true, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'] }],
 
+            'sonarjs/no-commented-code': 'warn',
             'sonarjs/no-dead-store': 'warn',
             'sonarjs/no-unused-vars': 'warn',
             'sonarjs/todo-tag': 'warn',
